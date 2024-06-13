@@ -1,13 +1,33 @@
+/* BookingComponent.css */
+
 .booking-component {
-  font-family: Arial, sans-serif;
-  max-width: 300px;
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #e0e0e0;
   border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #fff;
 }
 
 .price-info {
+  text-align: center;
   margin-bottom: 20px;
+}
+
+.price-info h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.price-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #999;
 }
 
 .date-picker {
@@ -16,7 +36,29 @@
 
 .date-picker label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+}
+
+.date-picker .react-datepicker-wrapper {
+  display: inline-block;
+  width: 100%;
+}
+
+.date-picker .react-datepicker__input-container input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.date-picker .react-datepicker__input-container input:focus {
+  border-color: #007bff;
 }
 
 .guests {
@@ -25,24 +67,76 @@
 
 .guests label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
 }
 
 .guests div {
   margin-bottom: 10px;
 }
 
-.reserve-now-button {
-  background-color: #ff4081;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+.guests input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
   border-radius: 5px;
+  font-size: 14px;
+  margin-right: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.guests input[type="number"]:focus {
+  border-color: #007bff;
+}
+
+.reserve-now-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-now-button:hover {
+  background-color: #218838;
 }
 
 .total-price {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
   margin-top: 20px;
-  font-size: 1.2em;
-  font-weight: bold;
+}
+
+.total-price p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .booking-component {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .price-info h2 {
+    font-size: 24px;
+  }
+
+  .date-picker label, .guests label {
+    font-size: 14px;
+  }
+
+  .reserve-now-button {
+    font-size: 14px;
+  }
 }

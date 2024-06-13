@@ -1,0 +1,48 @@
+.booking-component {
+  font-family: Arial, sans-serif;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.price-info {
+  margin-bottom: 20px;
+}
+
+.date-picker {
+  margin-bottom: 20px;
+}
+
+.date-picker label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.guests {
+  margin-bottom: 20px;
+}
+
+.guests label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.guests div {
+  margin-bottom: 10px;
+}
+
+.reserve-now-button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.total-price {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
